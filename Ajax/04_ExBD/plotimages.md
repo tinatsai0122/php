@@ -1,0 +1,6 @@
+- find images for each airport
+- create folder for images
+- store the links of the images in the database (add one more column - varchar)
+- inclure les images dans le requete (deja fait avec SELECT*)
+- add the image display to the DOM(li)
+- do the CSS for the good size
