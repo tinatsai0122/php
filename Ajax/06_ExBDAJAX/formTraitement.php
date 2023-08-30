@@ -37,5 +37,8 @@ try{
     //6. fetch the result
     $arrAirports = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+    //7. encoding the result in JSON
+    print(json_encode($arrAirports));
+
 
 ?>
