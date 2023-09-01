@@ -56,20 +56,23 @@ class CompteBancaire{
     }
 
 //function to deposit money in the account
-    public function deposit(float $deposit){
+    public function deposit(float $deposit):self{
             $this->balance += $deposit;
             $this->deposit += $deposit;
+            return $this;
     }
 //function to withdraw money from the account
-    public function withdraw(float $expendure){
+    public function withdraw(float $expendure):self{
+        if($expendure > $this->balance){
             $this->balance -= $expendure;
             $this->expendure += $expendure;
+            return $this;
     }
+}
+
     //function to block the account
     public function blockAccount(){
-        $this->balance = 0;
-        $this->deposit = 0;
-        $this->expendure = 0;
+
     }
 }
 ?>
