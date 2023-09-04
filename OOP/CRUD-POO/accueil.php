@@ -33,7 +33,7 @@ try{
  $filmManager->insert($f2);
 
 //chercher un film par titre
-$filmsTrouves = $filmManager->select();
+//$filmsTrouves = $filmManager->select();
 
 ?>
 

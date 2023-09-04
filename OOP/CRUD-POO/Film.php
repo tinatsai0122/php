@@ -2,16 +2,33 @@
 
 class Film
 {
+    private int $id; //you need to add id in order to use it in the CRUD
     private string $titre;
     private int $duree;
 
     // association
     private array $seances;
 
-    public function __construct(string $titre, int $duree)
+    public function __construct(int $id, string $titre, int $duree)
     {
+        $this->id = $id;
         $this->titre = $titre;
         $this->duree = $duree;
+
+        /**
+         * Get the value of id
+         */
+        public function getId() {
+                return $this->id;
+        }
+
+        /**
+         * Set the value of id
+         */
+        public function setId($id): self {
+                $this->id = $id;
+                return $this;
+        }
     }
 
 
