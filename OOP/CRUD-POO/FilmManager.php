@@ -2,7 +2,7 @@
 //faire le CRUD de la classe Film dans la BD
 
 class FilmManager{
-    private PDO $cnx;
+    private PDO $cnx; //PDO = PHP Data Object
 
     public function __construct(PDO $cnx){
         $this->cnx=$cnx;
