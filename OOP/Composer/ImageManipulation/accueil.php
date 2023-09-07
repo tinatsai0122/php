@@ -11,7 +11,17 @@
 
     use Spatie\Image\Image;
 
-    $image = Image::load('./images/face.webp');
+//    Image::load('./images/playa.jpg')
+//        ->greyscale()
+//        ->save('./images/playaGreys.jpg');
+  
+    $image = new Image ("./images/face.webp");
+    $image->greyscale();
+    $image->save("./images/faceGreys.webp");
+
+
+
+
 
 ?>
 </body>

@@ -50,32 +50,21 @@
    - User management, content moderation, and reporting tools.
 
 8. **Integration of APIs:**
-   - Integration with external APIs for services like flight booking, accommodation booking, and weather information.
-   - APIs for language translation if offering content in multiple languages.
+   - Integration with external APIs for services like 
+     - flight booking, accommodation booking : Amadeus API
+     - weather information
+     - language translation: Google Translate or OpenAI
 
-Integration with analytics tools to monitor website traffic, user behavior, and conversion rates.
-Generate reports for performance analysis.
-Feedback and Support:
+## Symfony Bundles & Components 
+-  **Symfony Security Bundle:** Utilize the Symfony Security Bundle to manage authentication and authorization. You can set up different roles and access controls for the admin, service provider, and user.
+- **EasyAdminBundle:** It’s a bundle that can help you create admin panels quickly and is compatible with Symfony.
+- **FOSUserBundle:** Leverage the FOSUserBundle to handle user management functionalities. It comes with features such as user registration, password resetting, and profile management, which would be beneficial for managing your service providers and users.
+- **Workflow Component:** Symfony’s Workflow component can be used to handle the workflows in your system, such as the approval process for the service provider profile.
+- **Sulu CMS:**
 
-Provide user-friendly mechanisms for users to contact support or provide feedback.
-Legal and Compliance:
 
-Ensure compliance with data protection regulations (e.g., GDPR) and relevant laws.
-Terms and conditions, privacy policy, and disclaimer pages.
-Scalability and Performance:
-
-Develop the website to handle increased traffic and accommodate future growth.
-Testing and Quality Assurance:
-
-Conduct thorough testing, including functional testing, usability testing, and security testing.
-Documentation:
-
-Create user manuals and technical documentation for administrators and tour organizers.
-Maintenance and Support:
-
-Establish a plan for ongoing maintenance, updates, and customer support.
-Budget and Timeline:
-
-Define the project budget and timeline, including milestones and deliverables.
-
+## Roles
+- **Administrator:**
+- **Service Provider:**
+- **User:**
 ## Project Planning
