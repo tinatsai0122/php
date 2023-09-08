@@ -1,81 +1,68 @@
-# Project Document
+# 1. Project Document
 
-## Project Overview
+## 1.1. Project Overview
 
-- **Project Title:** EU Study Trips Web Application Development
-- **Project Description:** The EU Study Trips web application is a comprehensive online platform designed to facilitate educational and cultural experiences in Europe for Chinese-speaking students. This platform will serve as a one-stop solution for students, parents, educators, and tour organizers. It will offer a wide range of services, including booking study tours, language programs, cultural immersion activities, and more, all tailored to the needs and preferences of Chinese-speaking users.
-- **Project Objectives and Goals:**
-  1.  **Enhanced User Experience:** Improve the overall user experience for visitors to the website, making it easy to navigate, find information, and book tours or activities.
-  2.  **Expand Offerings:** Create a platform that allows you to showcase a wide range of educational tours, language programs, cultural activities, and workshops, both those you organize and those offered by individual tour organizers.
-  3.  **User Engagement:** Increase user engagement by providing interactive features such as booking capabilities, reviews, and user-generated content.
-  4.  **Language Accessibility:** Offer the website in both English and Traditional Chinese to cater to a diverse audience of students and parents.
-  5.  **Content Translation:** Implement automatic translation capabilities to generate content in Traditional Chinese from English for scalability.
-  6.  **Educational Resources:** Provide educational resources and information about EU Study Trips, European institutions, and cultural experiences to inform and engage visitors.
-- **Project Scope:**
+### Project Title
 
-1.  **User Registration and Profiles:**
+EU Study Trips Web Application Development
 
-- User registration and login functionality for students, tour organizers, and administrator.
-- User profiles with personal information, preferences, and booking history.
+### Project Description:
 
-2.  **Tour and Activity Listings:**
+The EU Study Trips web application is envisioned as a comprehensive online platform dedicated to enriching educational and cultural experiences in Europe, specifically designed to cater to Chinese-speaking students. This multifaceted platform aims to serve as a centralized hub, providing an array of services and resources tailored to the unique needs and preferences of our target audience, which includes students, parents, educators, and tour organizers.
 
-- Display detailed listings of tours, activities, classes, and workshops. Include descriptions, schedules, prices, photos, and availability.
-- Search and filtering options for users to find specific offerings.
+The initial phase of this project will be dedicated to the development of the MVP, focusing on core features and functionalities essential for a fully functional and user-friendly platform. Subsequent phases will involve iterative enhancements, additions, and refinements to expand the platform's capabilities and user base.
 
-3.  **Booking and Payment Processing:**
+The MVP development will prioritize key components such as booking study tours, accessing language programs, participating in cultural immersion activities, and more. These fundamental elements will lay the foundation for future developments and ensure a seamless and engaging user experience.
 
-- Secure booking system for users to reserve tours and activities.
-- Integration with payment gateways to process payments online.
-- Generation of booking confirmations and receipts.
+## Project Objectives and Goals
 
-4. **Content Management:**
+**Objective 1:** Develop a robust Minimum Viable Product (MVP) of the EU Study Trips web application, with a focus on core functionalities essential for a comprehensive educational and cultural experience platform.
 
-- Content management system (CMS) for administrators to add, edit, and remove listings.
-- Ability to manage text, images, and multimedia content on the website.
+**Objective 2:** Implement a secure and efficient booking system for study tours, language programs, cultural immersion activities, and related services, promoting accessibility and convenience.
 
-5.  **User Reviews and Ratings:**
+**Objective 3:** Integrate reliable and relevant APIs to enhance the platform's offerings, including class registration, country-specific touristic information, weather updates, and other useful data.
 
-- Allow users to leave reviews and ratings for tours and activities.
-- Display average ratings and user-generated content.
+## 1.2. Project MVP Scope
 
-6. **Tour Organizer Dashboard:**
+### **1. User Registration and Profiles**
 
-- Dashboard for tour organizers to create and manage their offerings.
-- Tools for uploading tour details, availability, and pricing.
+- **Functionalities:**
+  - **User Registration & Login**: Implement seamless user sign-up and login processes.
+  - **User Profiles**: Allow users to create, edit, and manage their profiles, accessing personal information and booking history.
+- **Tools:**
+  - [FOSUserBundle](https://symfony.com/doc/current/bundles/FOSUserBundle/index.html): Leverage for efficient user management.
+  - [Symfony Security Bundle](https://symfony.com/doc/current/security.html): Ensure robust security.
 
-7. **Admin Panel:**
+### **2. Tour and Activity Listings**
 
-   - Administrative interface for managing the entire platform.
-   - User management, content moderation, and reporting tools.
+- **Functionalities:**
+  - **Listing Page**: Develop a user-friendly page to showcase a wide array of available tours and activities, offering essential details like names, descriptions, and pricing.
+  - **Detail Page**: Create individualized pages for each tour and activity, presenting comprehensive information to potential customers.
+- **Tools:**
+  - [Doctrine ORM](https://www.doctrine-project.org/projects/orm.html): Utilize for efficient database interactions and managing entity relationships within your listings.
+  - [VichUploaderBundle](https://github.com/dustin10/VichUploaderBundle): Implement to facilitate hassle-free file uploads, crucial for showcasing captivating images of the tours and activities.
 
-8. **Integration of APIs:**
-   - Integration with external APIs for services like flight booking, accommodation booking, and weather information.
-   - APIs for language translation if offering content in multiple languages.
+### **3. Booking System**
 
-Integration with analytics tools to monitor website traffic, user behavior, and conversion rates.
-Generate reports for performance analysis.
-Feedback and Support:
+- **Functionalities:**
+  - **Booking Mechanism**: Develop a straightforward booking system allowing users to reserve spots for tours and activities without online payment integration for simplicity.
+  - **Booking Confirmations**: Automatically send booking confirmations via email for user convenience.
+- **Tools:**
+  - [Doctrine ORM](https://www.doctrine-project.org/projects/orm.html): Harness the power of for managing booking data and interactions with the database.
+  - [SwiftMailerBundle (or Symfony Mailer)](https://symfony.com/doc/current/email.html): Utilize either to ensure seamless email confirmations are sent following bookings.
 
-Provide user-friendly mechanisms for users to contact support or provide feedback.
-Legal and Compliance:
+### **4. Admin Panel**
 
-Ensure compliance with data protection regulations (e.g., GDPR) and relevant laws.
-Terms and conditions, privacy policy, and disclaimer pages.
-Scalability and Performance:
+- **Functionalities:**
+  - **Admin Dashboard**: Construct a user-friendly admin panel for simplified management of listings and efficient viewing of bookings.
+- **Tools:**
+  - [EasyAdminBundle](https://github.com/EasyCorp/EasyAdminBundle): Build the admin panel effortlessly using to facilitate smooth management tasks.
 
-Develop the website to handle increased traffic and accommodate future growth.
-Testing and Quality Assurance:
+### **5. API Integration: Adameus API**
 
-Conduct thorough testing, including functional testing, usability testing, and security testing.
-Documentation:
+- **Functionalities:**
+  - **Flight Offering Integration**: Enrich the tour offerings with real-time flight information, enabling users to plan their trips more conveniently.
+- **Tools:**
+  - [Adameus Self-ServiceAPI](https://developers.amadeus.com/self-service)
 
-Create user manuals and technical documentation for administrators and tour organizers.
-Maintenance and Support:
-
-Establish a plan for ongoing maintenance, updates, and customer support.
-Budget and Timeline:
-
-Define the project budget and timeline, including milestones and deliverables.
-
-## Project Planning
+\_Please note that this MVP scope is part of a multi-phase project, and additional functionalities and integrations will be considered in subsequent phases to enhance the platform's capabilities.
