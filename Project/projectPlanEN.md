@@ -65,4 +65,26 @@ The MVP development will prioritize key components such as booking study tours, 
 - **Tools:**
   - [Adameus Self-ServiceAPI](https://developers.amadeus.com/self-service)
 
-\_Please note that this MVP scope is part of a multi-phase project, and additional functionalities and integrations will be considered in subsequent phases to enhance the platform's capabilities.
+# \_Please note that this MVP scope is part of a multi-phase project, and additional functionalities and integrations will be considered in subsequent phases to enhance the platform's capabilities.
+
+8. **Integration of APIs:**
+   - Integration with external APIs for services like
+     - flight booking, accommodation booking : Amadeus API
+     - weather information
+     - language translation: Google Translate or OpenAI
+
+## Symfony Bundles & Components
+
+- **Symfony Security Bundle:** Utilize the Symfony Security Bundle to manage authentication and authorization. You can set up different roles and access controls for the admin, service provider, and user.
+- **EasyAdminBundle:** It’s a bundle that can help you create admin panels quickly and is compatible with Symfony.
+- **FOSUserBundle:** Leverage the FOSUserBundle to handle user management functionalities. It comes with features such as user registration, password resetting, and profile management, which would be beneficial for managing your service providers and users.
+- **Workflow Component:** Symfony’s Workflow component can be used to handle the workflows in your system, such as the approval process for the service provider profile.
+- **Sulu CMS:**
+
+## Roles
+
+- **Administrator:**
+- **Service Provider:**
+- **User:**
+
+## Project Planning
